@@ -18,6 +18,7 @@ a {
 }
 a {
   text-decoration: none;
+<<<<<<< HEAD
   color: inherit;
 }
 
@@ -26,6 +27,12 @@ a:hover {
   text-decoration: none;
 }
 a:focus {
+=======
+  color: inherit; /* 원래 색상 유지 (선택) */
+}
+
+a:hover {
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   text-decoration: none;
 }
 
@@ -34,6 +41,7 @@ ol {
   list-style: none;
 }
 
+<<<<<<< HEAD
 .product-card a {
   color: inherit;
   text-decoration: none;
@@ -42,6 +50,8 @@ ol {
 .product-card a:hover {
   color: inherit;
 }
+=======
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 .coupon-banner {
   background-color: #800080;
   color: white;
@@ -77,6 +87,7 @@ ol {
   background-color: white;
 }
 
+<<<<<<< HEAD
 .login > ul > li .nav-link {
   font-size: 12px;
   color: #333;
@@ -96,6 +107,9 @@ ol {
   color: #333;
 }
 
+=======
+/* 중간 배너 */
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 #middle-banner {
   background-color: white;
   padding: 20px 0;
@@ -125,6 +139,7 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
 }
+<<<<<<< HEAD
 .logo-right-name li a {
   color: inherit;
   text-decoration: none;
@@ -142,10 +157,21 @@ ol {
 ul.logo-right-name:focus {
   color: none;
 }
+=======
+
+.logo-right-name {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  align-items: center;
+}
+
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 .logo-right-name .purple {
   color: rgb(95, 0, 128);
 }
 
+<<<<<<< HEAD
 .logo-right-name > a.nav-link:hover {
   color: none;
 }
@@ -154,12 +180,17 @@ ul.logo-right-name:focus {
   color: none;
 }
 
+=======
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 .search-box {
   position: relative;
   width: 400px;
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   margin-left: -40px;
+=======
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 }
 
 .search-box input {
@@ -168,7 +199,10 @@ ul.logo-right-name:focus {
   border: 1px solid rgb(95, 0, 128);
   border-radius: 4px;
   font-size: 14px;
+<<<<<<< HEAD
   height: 48px;
+=======
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 }
 
 .search-box button {
@@ -182,8 +216,13 @@ ul.logo-right-name:focus {
 }
 
 .search-box button img {
+<<<<<<< HEAD
   width: 36px;
   height: 36px;
+=======
+  width: 24px;
+  height: 24px;
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 }
 
 .login-icons {
@@ -193,8 +232,13 @@ ul.logo-right-name:focus {
 }
 
 .login-icons img {
+<<<<<<< HEAD
   width: 36px;
   height: 36px;
+=======
+  width: 30px;
+  height: 30px;
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 }
 
 .kurly-navbar {
@@ -215,12 +259,17 @@ ul.logo-right-name:focus {
 
 .navbar-center .center-menu {
   display: flex;
+<<<<<<< HEAD
   gap: 82px;
+=======
+  gap: 30px;
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   font-size: 14px;
   font-weight: 500;
   justify-content: center;
   width: 100%;
 }
+<<<<<<< HEAD
 .navbar-center .center-menu > button {
   border-radius: 20px;
   border: 1px solid rgb(238, 238, 238);
@@ -250,6 +299,13 @@ a.nav-link :focus {
 .navbar-center > button {
   margin-left: 30px;
 }
+=======
+
+.center-menu a:hover {
+  color: rgb(95, 0, 128);
+}
+
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 .easy-meal-section {
   max-width: 1050px;
   margin: 3rem auto;
@@ -263,8 +319,13 @@ a.nav-link :focus {
 }
 
 .easy-meal-section .section-title h2 {
+<<<<<<< HEAD
   font-size: 28px;
 
+=======
+  font-size: 1.5rem;
+  font-weight: bold;
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,7 +333,11 @@ a.nav-link :focus {
 }
 
 .easy-meal-section .section-title span {
+<<<<<<< HEAD
   font-size: 28px;
+=======
+  font-size: 1.2rem;
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   color: #666;
 }
 
@@ -288,6 +353,10 @@ a.nav-link :focus {
 }
 
 .easy-meal-section .product-card {
+<<<<<<< HEAD
+=======
+  border-radius: 8px;
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   background-color: #fff;
   text-align: center;
   font-size: 14px;
@@ -296,12 +365,19 @@ a.nav-link :focus {
 
 .easy-meal-section .product-card img {
   width: 100%;
+<<<<<<< HEAD
   overflow: hidden;
   transition: transform 0.3s ease;
 }
 .product-card {
   overflow: hidden;
 }
+=======
+
+  transition: transform 0.3s ease;
+}
+
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 .product-card img:hover {
   transform: scale(1.02);
 }
@@ -368,6 +444,7 @@ a.nav-link :focus {
 }
 
 #coupon {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   margin: 40px 0;
@@ -379,6 +456,17 @@ a.nav-link :focus {
 
   height: auto;
   display: block;
+=======
+  max-width: 1050px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+#coupon > img {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 }
 
 .today-deal-wrapper {
@@ -418,9 +506,16 @@ a.nav-link :focus {
   width: 338px;
   height: 621px;
   background-color: #fff;
+<<<<<<< HEAD
   border: 1px solid white;
 
   overflow: hidden;
+=======
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 16px;
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -450,16 +545,24 @@ a.nav-link :focus {
 .img-wrapper {
   position: relative;
   width: 100%;
+<<<<<<< HEAD
   height: 433px;
+=======
+  height: 330px;
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   transition: transform 0.3s ease;
 }
 
 .img-wrapper:hover {
   transform: scale(1.02);
 }
+<<<<<<< HEAD
 .img-wrapper > a > img {
   height: 100%;
 }
+=======
+
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 .product-img {
   width: 100%;
   height: 100%;
@@ -493,6 +596,10 @@ a.nav-link :focus {
   font-weight: 500;
   margin-top: 10px;
   line-height: 1.4;
+<<<<<<< HEAD
+=======
+  min-height: 50px;
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 }
 
 .price {
@@ -501,27 +608,51 @@ a.nav-link :focus {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 .price > del {
   font-size: 14px;
   font-weight: 400;
 }
+=======
+.title,
+.price:hover {
+  color: #212529;
+}
+
+.price:hover {
+  color: #212529;
+}
+
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 .discount {
   color: #fa622f;
   margin-right: 6px;
 }
 
+<<<<<<< HEAD
+=======
+/* 반응형: 768px 이하일 때 2개씩 */
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 @media (max-width: 768px) {
   .easy-meal-section .product-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+<<<<<<< HEAD
+=======
+/* 반응형: 480px 이하일 때 1개씩 */
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 @media (max-width: 480px) {
   .easy-meal-section .product-list {
     grid-template-columns: 1fr;
   }
 }
 
+<<<<<<< HEAD
+=======
+/* 반응형 */
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 @media (max-width: 768px) {
   #middle-container {
     flex-direction: column;

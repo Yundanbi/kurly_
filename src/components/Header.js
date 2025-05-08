@@ -28,6 +28,7 @@ function Header() {
             <li>
               <Link to="/help">고객센터</Link>
             </li>
+<<<<<<< HEAD
 
             <li>|</li>
             <li>
@@ -40,6 +41,8 @@ function Header() {
                 게시판
               </Nav.Link>
             </li>
+=======
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
           </ul>
         </div>
 
@@ -92,9 +95,12 @@ function Header() {
               <Nav.Link href="#">베스트</Nav.Link>
               <Nav.Link href="#">알뜰쇼핑</Nav.Link>
               <Nav.Link href="#">특가/혜택</Nav.Link>
+<<<<<<< HEAD
               <button>
                 <span>샛별·하루</span> 배송안내
               </button>
+=======
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
             </Nav>
           </div>
         </Container>

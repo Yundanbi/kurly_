@@ -26,7 +26,11 @@ function ProductDetail() {
     price,
     origin,
     thumbnail,
+<<<<<<< HEAD
     location,
+=======
+    delivery,
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
     seller,
     packge,
     unit,
@@ -35,7 +39,10 @@ function ProductDetail() {
     allergy_detail,
     product_choice,
     brand,
+<<<<<<< HEAD
     delivery,
+=======
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   } = product;
 
   return (
@@ -66,6 +73,7 @@ function ProductDetail() {
           </div>
 
           <div className="product-info-section">
+<<<<<<< HEAD
             <div className="delivery-type">{location}</div>
             <div id="name_button">
               <h2>{name}</h2>
@@ -73,6 +81,10 @@ function ProductDetail() {
                 <img src="/img/button.svg"></img>
               </button>
             </div>
+=======
+            <div className="delivery-type">{delivery.type}</div>
+            <h2>{name}</h2>
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
             <p className="subname">{subname}</p>
 
             <div className="price-box">
@@ -90,10 +102,14 @@ function ProductDetail() {
               <del>{price.original}</del>
             </div>
             <div className="origin-info">{origin}</div>
+<<<<<<< HEAD
             <button className="coupon_button2">
               지금 이 상품 <span> 2,000</span> 원 할인 받기{" "}
               <strong>&gt;</strong>
             </button>
+=======
+
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
             <button className="coupon-button">
               첫 구매 할인 쿠폰 받기 &gt;
             </button>
@@ -141,6 +157,7 @@ function ProductDetail() {
                 <option>{product_choice.choice_name}</option>
               </select>
               <div className="total-price">
+<<<<<<< HEAD
                 총 상품금액: <span>{product_choice.discount_price}</span>
               </div>
               <div id="cart_heart">
@@ -154,13 +171,23 @@ function ProductDetail() {
                   장바구니 담기
                 </button>
               </div>
+=======
+                총 상품금액: {product_choice.discount_price}
+              </div>
+              <button className="add-to-cart" onClick={handleAddToCart}>
+                장바구니 담기
+              </button>
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
             </div>
           </div>
         </div>
       </div>
 
+<<<<<<< HEAD
       <div className="product_sidebar"></div>
 
+=======
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
       <div className="product-tab-menu">
         <ul>
           <li

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// src/components/Home.jsx
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,8 +11,12 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../store/cartSlice";
 import CartModal from "./CartModal";
 import Footer from "./Footer";
+<<<<<<< HEAD
 import Board from "./Board";
 
+=======
+import Header from "./Header";
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 function Home() {
   const [index, setIndex] = useState(0);
   const [data, setData] = useState(rawData);
@@ -35,6 +43,7 @@ function Home() {
     return `${m}:${s}`;
   };
 
+<<<<<<< HEAD
   const [input, setInput] = useState("");
   const filteredData = rawData.filter(
     (item) => item.name && item.name.toLowerCase().includes(input.toLowerCase())
@@ -43,6 +52,12 @@ function Home() {
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
+=======
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   const handleModalOpen = (item) => setModalProduct(item);
   const handleModalClose = () => setModalProduct(null);
 
@@ -66,6 +81,7 @@ function Home() {
       )}
       <>
         {" "}
+<<<<<<< HEAD
         <div className="coupon-banner">
           <div>지금 가입하고 최대 1만원 할인쿠폰 받아가세요</div>
         </div>
@@ -157,6 +173,9 @@ function Home() {
             </div>
           </Container>
         </Navbar>
+=======
+        <Header />
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
         <div className="slider">
           <Carousel activeIndex={index} onSelect={handleSelect}>
             {[1, 2, 3, 4, 5, 6, 7].map((num) => (
@@ -172,6 +191,7 @@ function Home() {
             ))}
           </Carousel>
         </div>
+<<<<<<< HEAD
         {input && (
           <section className="search-result-section easy-meal-section">
             <div className="section-title"></div>
@@ -554,6 +574,348 @@ function Home() {
             <Footer />
           </>
         )}
+=======
+        <section className="easy-meal-section">
+          <div className="section-title">
+            <h2>
+              🍖 간편하게 준비하는 가족 밥상{" "}
+              <Link to="/easy-meal">
+                <span>&gt;</span>
+              </Link>
+            </h2>
+            <p>아이부터 어른까지 남녀노소 취향 저격!</p>
+          </div>
+
+          <div className="product-list">
+            {data.slice(0, 4).map((item, i) => (
+              <div className="product-card" key={i}>
+                <div className="badge">+10% 쿠폰</div>
+                <Link to={`/goods/${item.id}`}>
+                  <img src={item.thumbnail} alt={item.name} />
+                </Link>
+                <button
+                  className="cart-btn"
+                  onClick={() => handleModalOpen(item)}
+                >
+                  🛒 담기
+                </button>
+                <Link to={`/goods/${item.id}`}>
+                  <p className="title">{item.name}</p>
+                  <p className="original-price">
+                    <del>{item.price.original}</del>
+                  </p>
+                  <p className="discounted-price">
+                    <span className="rate">{item.price.discountRate}%</span>{" "}
+                    <strong>{item.price.discounted}원</strong>
+                  </p>
+                  <p className="review">💬 {item.reviews}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="easy-meal-section">
+          <div className="section-title">
+            <h2>
+              🛒지금 가장 많이 담는 특가{" "}
+              <Link to="/easy-meal">
+                <span>&gt;</span>
+              </Link>
+            </h2>
+            <p>꼭 담아야 할 추천 특가템 최대 60% OFF</p>
+          </div>
+
+          <div className="product-list">
+            {data.slice(4, 8).map((item, i) => (
+              <div className="product-card" key={i}>
+                <div className="badge">+10% 쿠폰</div>
+                <Link to={`/goods/${item.id}`}>
+                  <img src={item.thumbnail} alt={item.name} />
+                </Link>
+                <button
+                  className="cart-btn"
+                  onClick={() => handleModalOpen(item)}
+                >
+                  🛒 담기
+                </button>
+                <Link to={`/goods/${item.id}`}>
+                  <p className="title">{item.name}</p>
+                  <p className="original-price">
+                    <del>{item.price.original}</del>
+                  </p>
+                  <p className="discounted-price">
+                    <span className="rate">{item.price.discountRate}%</span>{" "}
+                    <strong>{item.price.discounted}원</strong>
+                  </p>
+                  <p className="review">💬 {item.reviews}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+        <div id="coupon">
+          <Link to="#">
+            <img src="/img/coupon/1.png"></img>
+          </Link>
+        </div>
+        <div className="today-deal-wrapper">
+          <div className="deal-left">
+            <div className="timer">
+              <h2>🍀일일특가</h2>
+              <span>🕒</span> {formatTime(timeLeft)}
+            </div>
+            <p>망설이면 늦어요!</p>
+          </div>
+
+          <div className="deal-products">
+            {todayItems.map((item) => (
+              <div className="deal-card" key={item.id}>
+                <span className="deal-badge">일일특가</span>
+
+                <div className="img-wrapper">
+                  <Link to={`/goods/${item.id}`}>
+                    {item.id === "17" && (
+                      <img
+                        src="img/special price.png"
+                        alt="장보기 특가"
+                        className="tag-badge-img"
+                      />
+                    )}
+
+                    <img
+                      src={item.thumbnail}
+                      alt={item.name}
+                      className="product-img"
+                    />
+                  </Link>
+                </div>
+
+                <button
+                  className="cart-btn"
+                  onClick={() => handleModalOpen(item)}
+                >
+                  🛒 담기
+                </button>
+                <Link to={`/goods/${item.id}`}>
+                  <p className="title">{item.name}</p>
+                  <p className="price">
+                    <span className="discount">{item.price.discountRate}%</span>{" "}
+                    {item.price.discounted} <del>{item.price.original}</del>
+                  </p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div></div>
+        <section className="easy-meal-section">
+          <div className="section-title">
+            <h2>
+              놓치면 후회할 가격{" "}
+              <Link to="/easy-meal">
+                <span>&gt;</span>
+              </Link>
+            </h2>
+            <p>꼭 담아야 할 추천 특가템 최대 60% OFF</p>
+          </div>
+
+          <div className="product-list">
+            {data.slice(8, 12).map((item, i) => (
+              <div className="product-card" key={i}>
+                <div className="badge">+20% 쿠폰</div>
+                <Link to={`/goods/${item.id}`}>
+                  <img src={item.thumbnail} alt={item.name} />
+                </Link>
+                <button
+                  className="cart-btn"
+                  onClick={() => handleModalOpen(item)}
+                >
+                  🛒 담기
+                </button>
+                <Link to={`/goods/${item.id}`}>
+                  <p className="title">{item.name}</p>
+                  <p className="original-price">
+                    <del>{item.price.original}</del>
+                  </p>
+                  <p className="discounted-price">
+                    <span className="rate">{item.price.discountRate}%</span>{" "}
+                    <strong>{item.price.discounted}원</strong>
+                  </p>
+                  <p className="review">💬 {item.reviews}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="easy-meal-section">
+          <div className="section-title">
+            <h2>
+              🛒단골손님 장바구니 구경하기!{" "}
+              <Link to="/easy-meal">
+                <span>&gt;</span>
+              </Link>
+            </h2>
+            <p>컬리에서 주 5회 이상 쇼핑하는 고객님의 선택은?</p>
+          </div>
+
+          <div className="product-list">
+            {data.slice(12, 16).map((item, i) => (
+              <div className="product-card" key={i}>
+                <div className="badge"></div>
+                <Link to={`/goods/${item.id}`}>
+                  <img src={item.thumbnail} alt={item.name} />
+                </Link>
+                <button
+                  className="cart-btn"
+                  onClick={() => handleModalOpen(item)}
+                >
+                  🛒 담기
+                </button>
+                <Link to={`/goods/${item.id}`}>
+                  <p className="title">{item.name}</p>
+                  <p className="original-price">
+                    <del>{item.price.original}</del>
+                  </p>
+                  <p className="discounted-price">
+                    <span className="rate">{item.price.discountRate}%</span>{" "}
+                    <strong>{item.price.discounted}원</strong>
+                  </p>
+                  <p className="review">💬 {item.reviews}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+        <div id="coupon">
+          <Link to="#">
+            <img src="/img/coupon/2.jpg"></img>
+          </Link>
+        </div>
+        <section className="easy-meal-section">
+          <div className="section-title">
+            <h2>
+              공유가 많은 상품 랭킹{" "}
+              <Link to="/easy-meal">
+                <span>&gt;</span>
+              </Link>
+            </h2>
+            <p>최근 2주간 공유가 많았어요</p>
+          </div>
+
+          <div className="product-list">
+            {data.slice(18, 22).map((item, i) => (
+              <div className="product-card" key={i}>
+                <div className="badge">+10% 쿠폰</div>
+                <Link to={`/goods/${item.id}`}>
+                  <img src={item.thumbnail} alt={item.name} />
+                </Link>
+                <button
+                  className="cart-btn"
+                  onClick={() => handleModalOpen(item)}
+                >
+                  🛒 담기
+                </button>
+                <Link to={`/goods/${item.id}`}>
+                  <p className="title">{item.name}</p>
+                  <p className="original-price">
+                    <del>{item.price.original}</del>
+                  </p>
+                  <p className="discounted-price">
+                    <span className="rate">{item.price.discountRate}%</span>{" "}
+                    <strong>{item.price.discounted}원</strong>
+                  </p>
+                  <p className="review">💬 {item.reviews}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="easy-meal-section">
+          <div className="section-title">
+            <h2>
+              ✌MZ세대 인기 BEST 상품{" "}
+              <Link to="/easy-meal">
+                <span>&gt;</span>
+              </Link>
+            </h2>
+            <p>MZ세대라면 모를 수가 없는 컬리 인기템</p>
+          </div>
+
+          <div className="product-list">
+            {data.slice(22, 26).map((item, i) => (
+              <div className="product-card" key={i}>
+                <div className="badge">+8% 쿠폰</div>
+                <Link to={`/goods/${item.id}`}>
+                  <img src={item.thumbnail} alt={item.name} />
+                </Link>
+                <button
+                  className="cart-btn"
+                  onClick={() => handleModalOpen(item)}
+                >
+                  🛒 담기
+                </button>
+                <Link to={`/goods/${item.id}`}>
+                  <p className="title">{item.name}</p>
+                  <p className="original-price">
+                    <del>{item.price.original}</del>
+                  </p>
+                  <p className="discounted-price">
+                    <span className="rate">{item.price.discountRate}%</span>{" "}
+                    <strong>{item.price.discounted}원</strong>
+                  </p>
+                  <p className="review">💬 {item.reviews}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+        <div id="coupon">
+          <Link to="#">
+            <img src="/img/coupon/3.jpg"></img>
+          </Link>
+        </div>
+        <section className="easy-meal-section">
+          <div className="section-title">
+            <h2>
+              1만원대 구매가 많은 인기상품{" "}
+              <Link to="/easy-meal">
+                <span>&gt;</span>
+              </Link>
+            </h2>
+            <p>최근 2주간 판매량이 가장 많았어요</p>
+          </div>
+
+          <div className="product-list">
+            {data.slice(26, 30).map((item, i) => (
+              <div className="product-card" key={i}>
+                <div className="badge">+8% 쿠폰</div>
+                <Link to={`/goods/${item.id}`}>
+                  <img src={item.thumbnail} alt={item.name} />
+                </Link>
+
+                <button
+                  className="cart-btn"
+                  onClick={() => handleModalOpen(item)}
+                >
+                  🛒 담기
+                </button>
+                <Link to={`/goods/${item.id}`}>
+                  <p className="title">{item.name}</p>
+                  <p className="original-price">
+                    <del>{item.price.original}</del>
+                  </p>
+                  <p className="discounted-price">
+                    <span className="rate">{item.price.discountRate}%</span>{" "}
+                    <strong>{item.price.discounted}원</strong>
+                  </p>
+                  <p className="review">💬 {item.reviews}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+        <Footer />
+>>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
       </>
     </div>
   );
