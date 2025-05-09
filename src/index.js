@@ -8,14 +8,15 @@ import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
 import ScrollToTop from "./components/ScrollToTop";
+import { HashRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
-    <BrowserRouter basename="/Kurly">
+    <HashRouter>
       <ScrollToTop />
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>
 );
 

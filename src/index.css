@@ -314,6 +314,8 @@ a.nav-link :focus {
   width: 100%;
   overflow: hidden;
   transition: transform 0.3s ease;
+  z-index: 1;
+  position: relative;
 }
 .product-card {
   overflow: hidden;
@@ -338,7 +340,18 @@ a.nav-link :focus {
   width: auto;
   text-align: left;
 }
-
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #bd7ae7;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  z-index: 2;
+}
 .easy-meal-section .cart-btn {
   margin: 10px auto;
   padding: 6px 0;

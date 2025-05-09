@@ -354,7 +354,7 @@ function Home() {
                         {item.id === "17" && (
                           <img
                             src={
-                              process.env.PUBLIC_URL + "img/special price.png"
+                              process.env.PUBLIC_URL + "/img/special price.png"
                             }
                             alt="장보기 특가"
                             className="tag-badge-img"

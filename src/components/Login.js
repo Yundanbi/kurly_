@@ -38,9 +38,7 @@ function Login() {
         <button className="login-btn" onClick={handleLogin}>
           로그인
         </button>
-        <button className="signup-btn" onClick={() => navigate("/signup")}>
-          회원가입
-        </button>
+        <button className="signup-btn">회원가입</button>
       </div>
       <Footer />
     </>

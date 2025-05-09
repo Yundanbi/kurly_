@@ -1,4 +1,3 @@
-// src/components/CartModal.js
 import React, { useState } from "react";
 import "./CartModal.css";
 

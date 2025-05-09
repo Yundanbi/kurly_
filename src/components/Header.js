@@ -18,7 +18,7 @@ function Header() {
         <div className="login">
           <ul>
             <li>
-              <Link to="/signup">회원가입</Link>
+              <button onClick={() => navigate("/login")}>회원가입</button>
             </li>
             <li>|</li>
             <li>
