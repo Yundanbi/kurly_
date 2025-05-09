@@ -26,10 +26,15 @@ function Header() {
             </li>
             <li>|</li>
             <li>
-              <Link to="/help">고객센터</Link>
+              <Nav.Link
+                onClick={() => {
+                  navigate("/Board");
+                }}
+              >
+                {" "}
+                고객센터
+              </Nav.Link>
             </li>
-<<<<<<< HEAD
-
             <li>|</li>
             <li>
               <Nav.Link
@@ -41,8 +46,6 @@ function Header() {
                 게시판
               </Nav.Link>
             </li>
-=======
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
           </ul>
         </div>
 
@@ -66,19 +69,31 @@ function Header() {
             <div className="search-box">
               <input type="text" placeholder="검색어를 입력해주세요" />
               <button type="submit">
-                <img src="/img/search.svg" alt="검색" />
+                <img
+                  src={process.env.PUBLIC_URL + "/img/search.svg"}
+                  alt="검색"
+                />
               </button>
             </div>
 
             <div className="login-icons">
               <Link to="#">
-                <img src="/img/login1.svg" alt="로그인" />
+                <img
+                  src={process.env.PUBLIC_URL + "/img/login1.svg"}
+                  alt="로그인"
+                />
               </Link>
               <Link to="#">
-                <img src="/img/login2.svg" alt="회원가입" />
+                <img
+                  src={process.env.PUBLIC_URL + "/img/login2.svg"}
+                  alt="회원가입"
+                />
               </Link>
               <Link to="/cart">
-                <img src="/img/login3.svg" alt="장바구니" />
+                <img
+                  src={process.env.PUBLIC_URL + "/img/login3.svg"}
+                  alt="장바구니"
+                />
               </Link>
             </div>
           </div>
@@ -89,18 +104,19 @@ function Header() {
         <Container className="kurly-container">
           <div className="navbar-center">
             <Nav className="center-menu">
-              <img src="/img/category.svg" alt="카테고리" />
+              <img
+                src={process.env.PUBLIC_URL + "/img/category.svg"}
+                alt="카테고리"
+              />
               <Nav.Link href="#">카테고리</Nav.Link>
               <Nav.Link href="#">신상품</Nav.Link>
               <Nav.Link href="#">베스트</Nav.Link>
               <Nav.Link href="#">알뜰쇼핑</Nav.Link>
               <Nav.Link href="#">특가/혜택</Nav.Link>
-<<<<<<< HEAD
+
               <button>
                 <span>샛별·하루</span> 배송안내
               </button>
-=======
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
             </Nav>
           </div>
         </Container>

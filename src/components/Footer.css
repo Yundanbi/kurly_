@@ -42,8 +42,8 @@
 }
 
 .footer-phone span {
-  display: inline; /* ✅ 줄바꿈 없이 옆에 붙도록 */
-  margin-left: 8px; /* ✅ 숫자랑 시간 사이 간격 */
+  display: inline;
+  margin-left: 8px;
   font-size: 14px;
   color: #666;
 }

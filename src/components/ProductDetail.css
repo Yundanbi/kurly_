@@ -59,7 +59,6 @@
   font-size: 14px;
 }
 
-<<<<<<< HEAD
 #name_button {
   display: flex;
 }
@@ -69,8 +68,7 @@
   background-color: white;
   margin-left: 15px;
 }
-=======
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
+
 .brand-logo-box > img {
   width: 64px;
   height: 64px;
@@ -103,22 +101,13 @@
   font-size: 13px;
 }
 
-<<<<<<< HEAD
-=======
-/* 오른쪽 상품 정보 영역 */
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 .product-info-section {
   flex: 1 1 500px;
 }
 
 .delivery-type {
-<<<<<<< HEAD
   color: rgb(153, 153, 153);
-
-=======
-  color: #5f0080;
   font-weight: bold;
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   font-size: 14px;
   margin-bottom: 5px;
 }
@@ -165,7 +154,6 @@
 }
 
 .coupon-button {
-<<<<<<< HEAD
   background: #ffffff;
   border: 1px solid rgb(141, 76, 196);
   border-radius: 5px;
@@ -182,7 +170,6 @@
 .coupon_button2 {
   background-color: rgba(189, 118, 255, 0.08);
   border: 1px solid white;
-  width: 350px;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 13px;
@@ -197,9 +184,6 @@
   margin-left: 140px;
   font-weight: 300;
   color: rgb(95, 0, 128);
-}
-=======
-  background: #f2f0f0;
   border: none;
   padding: 10px;
   margin-bottom: 1rem;
@@ -207,7 +191,6 @@
   width: 100%;
 }
 
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 .info-table {
   width: 100%;
   border-top: 1px solid #ddd;
@@ -248,7 +231,6 @@
 }
 
 .total-price {
-<<<<<<< HEAD
   font-size: 13px;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -266,37 +248,23 @@
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(221, 221, 221);
   margin-right: 7px;
-  margin-top: 5px;
 }
 
 #cart_heart {
   max-width: 100%;
-}
-=======
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 .add-to-cart {
   background-color: #5f0080;
   color: white;
   border: none;
-<<<<<<< HEAD
   width: 410px;
   padding: 15px;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
   margin-left: 5px;
-  margin-top: 6px;
-=======
-  width: 100%;
-  padding: 12px;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
 }
 
 .product-tab-menu {

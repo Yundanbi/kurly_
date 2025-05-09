@@ -1,4 +1,3 @@
-// src/components/Cart.jsx
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart, changeQuantity } from "../store/cartSlice";
 import Header from "./Header";
@@ -43,7 +42,7 @@ function Cart() {
                 <div className="cart-item" key={item.id}>
                   <div className="item-info">
                     <img
-                      src={`/${item.thumbnail}`}
+                      src={process.env.PUBLIC_URL + `/${item.thumbnail}`}
                       alt={item.name}
                       className="item-thumbnail"
                     />

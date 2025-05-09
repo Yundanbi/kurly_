@@ -12,10 +12,9 @@ function CartModal({ product, onClose, onAdd }) {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        {/* 상단 썸네일과 상품명 */}
         <div className="modal-header">
           <img
-            src={`/${product.thumbnail}`}
+            src={process.env.PUBLIC_URL + `/${product.thumbnail}`}
             alt={product.name}
             width="50"
             height="50"
@@ -23,10 +22,8 @@ function CartModal({ product, onClose, onAdd }) {
           <p className="modal-title">{product.name}</p>
         </div>
 
-        {/* 다시 상품명 (작게) */}
         <p className="product-subtitle">{product.name}</p>
 
-        {/* 가격 + 수량 */}
         <div className="price-qty-row">
           <div>
             <strong className="price-discount">
@@ -43,7 +40,6 @@ function CartModal({ product, onClose, onAdd }) {
 
         <hr className="modal-divider" />
 
-        {/* 합계 */}
         <div className="total-section">
           <span>합계</span>
           <span className="total-price">
@@ -56,7 +52,6 @@ function CartModal({ product, onClose, onAdd }) {
           </span>
         </div>
 
-        {/* 하단 버튼 */}
         <div className="modal-actions">
           <button className="cancel-btn" onClick={onClose}>
             취소

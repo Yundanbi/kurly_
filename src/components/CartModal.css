@@ -39,7 +39,6 @@
   font-weight: 500;
 }
 
-/* 가격, 수량 조절 */
 .product-price-info {
   display: flex;
   align-items: center;
@@ -59,7 +58,6 @@
   margin-left: 10px;
 }
 
-/* 수량 조절 버튼 */
 .qty-control {
   display: flex;
   align-items: center;
@@ -78,7 +76,6 @@
   border-radius: 4px;
 }
 
-/* 합계 라인 */
 .total-line {
   display: flex;
   justify-content: space-between;
@@ -87,7 +84,6 @@
   font-weight: 500;
 }
 
-/* 액션 버튼들 */
 .modal-actions {
   display: flex;
   gap: 12px;

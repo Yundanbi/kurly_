@@ -26,11 +26,8 @@ function ProductDetail() {
     price,
     origin,
     thumbnail,
-<<<<<<< HEAD
     location,
-=======
     delivery,
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
     seller,
     packge,
     unit,
@@ -39,10 +36,6 @@ function ProductDetail() {
     allergy_detail,
     product_choice,
     brand,
-<<<<<<< HEAD
-    delivery,
-=======
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
   } = product;
 
   return (
@@ -52,14 +45,17 @@ function ProductDetail() {
         <div className="product-detail-wrapper">
           <div className="product-image-section">
             <div className="product-image">
-              <img src={`/${thumbnail}`} alt={name} />
+              <img src={process.env.PUBLIC_URL + `/${thumbnail}`} alt={name} />
               <div className="badge-top">+10% 쿠폰</div>
             </div>
 
             {brand && (
               <div className="brand-card">
                 <div className="brand-logo-box">
-                  <img src={`/${brand.brand_img}`} alt={brand.brand_name} />
+                  <img
+                    src={process.env.PUBLIC_URL + `/${brand.brand_img}`}
+                    alt={brand.brand_name}
+                  />
                 </div>
                 <div className="brand-info-box">
                   <span className="brand-label">브랜드관</span>
@@ -73,20 +69,14 @@ function ProductDetail() {
           </div>
 
           <div className="product-info-section">
-<<<<<<< HEAD
             <div className="delivery-type">{location}</div>
             <div id="name_button">
               <h2>{name}</h2>
               <button>
-                <img src="/img/button.svg"></img>
+                <img src={process.env.PUBLIC_URL + "/img/button.svg"}></img>
               </button>
             </div>
-=======
-            <div className="delivery-type">{delivery.type}</div>
-            <h2>{name}</h2>
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
             <p className="subname">{subname}</p>
-
             <div className="price-box">
               <span className="discount-rate">{price.discountRate}%</span>
               <span className="discounted">
@@ -102,14 +92,10 @@ function ProductDetail() {
               <del>{price.original}</del>
             </div>
             <div className="origin-info">{origin}</div>
-<<<<<<< HEAD
             <button className="coupon_button2">
               지금 이 상품 <span> 2,000</span> 원 할인 받기{" "}
               <strong>&gt;</strong>
             </button>
-=======
-
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
             <button className="coupon-button">
               첫 구매 할인 쿠폰 받기 &gt;
             </button>
@@ -157,37 +143,26 @@ function ProductDetail() {
                 <option>{product_choice.choice_name}</option>
               </select>
               <div className="total-price">
-<<<<<<< HEAD
                 총 상품금액: <span>{product_choice.discount_price}</span>
               </div>
               <div id="cart_heart">
                 <button className="heart">
-                  <img src="/img/heart.svg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/heart.svg"}></img>
                 </button>
                 <button className="heart">
-                  <img src="/img/detail1.svg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/detail1.svg"}></img>
                 </button>
                 <button className="add-to-cart" onClick={handleAddToCart}>
                   장바구니 담기
                 </button>
               </div>
-=======
-                총 상품금액: {product_choice.discount_price}
-              </div>
-              <button className="add-to-cart" onClick={handleAddToCart}>
-                장바구니 담기
-              </button>
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
             </div>
           </div>
         </div>
       </div>
 
-<<<<<<< HEAD
       <div className="product_sidebar"></div>
 
-=======
->>>>>>> b290e75fd9c51aabf55e6835013a82df54b8e2cd
       <div className="product-tab-menu">
         <ul>
           <li
@@ -221,7 +196,10 @@ function ProductDetail() {
         {tab === "description" && (
           <div className="description-section">
             <img
-              src={`/${product.Product_description.description_img}`}
+              src={
+                process.env.PUBLIC_URL +
+                `/${product.Product_description.description_img}`
+              }
               alt="상품설명"
               className="description-img"
             />
@@ -242,7 +220,7 @@ function ProductDetail() {
             {product.detailImages?.map((imgSrc, index) => (
               <img
                 key={index}
-                src={`/${imgSrc}`}
+                src={process.env.PUBLIC_URL + `/${imgSrc}`}
                 alt={`상세정보 이미지 ${index + 1}`}
                 className="detail-img"
               />
@@ -255,7 +233,11 @@ function ProductDetail() {
 
             <div className="review-thumbnail-list">
               {product.review?.review_img?.map((img, idx) => (
-                <img key={idx} src={`/${img}`} alt={`리뷰 이미지 ${idx + 1}`} />
+                <img
+                  key={idx}
+                  src={process.env.PUBLIC_URL + `/${img}`}
+                  alt={`리뷰 이미지 ${idx + 1}`}
+                />
               ))}
             </div>
 
@@ -277,7 +259,7 @@ function ProductDetail() {
                 {product.review?.review_detail?.review_imag?.map((img, idx) => (
                   <img
                     key={idx}
-                    src={`/${img}`}
+                    src={process.env.PUBLIC_URL + `/${img}`}
                     alt={`상세 후기 이미지 ${idx + 1}`}
                   />
                 ))}

@@ -1,7 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
-// src/components/Footer.jsx
 import React from "react";
 import "./Footer.css";
 
@@ -9,7 +7,6 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* 왼쪽 고객센터 */}
         <div className="footer-left">
           <p className="footer-title">고객행복센터</p>
           <p className="footer-phone">
@@ -44,7 +41,6 @@ function Footer() {
           <p className="footer-email">비회원 문의 : help@kurlycorp.com</p>
         </div>
 
-        {/* 오른쪽 회사정보 */}
         <div className="footer-right">
           <ul className="footer-links">
             <li>컬리소개</li>
@@ -73,15 +69,26 @@ function Footer() {
           </div>
 
           <div className="footer-sns">
-            <img src="/img/footer/1.png" alt="인스타그램" />
-            <img src="/img/footer/2.png" alt="페이스북" />
-            <img src="/img/footer/3.png" alt="블로그" />
-            <img src="/img/footer/4.png" alt="유튜브" />
+            <img
+              src={process.env.PUBLIC_URL + "/img/footer/1.png"}
+              alt="인스타그램"
+            />
+            <img
+              src={process.env.PUBLIC_URL + "/img/footer/2.png"}
+              alt="페이스북"
+            />
+            <img
+              src={process.env.PUBLIC_URL + "/img/footer/3.png"}
+              alt="블로그"
+            />
+            <img
+              src={process.env.PUBLIC_URL + "/img/footer/4.png"}
+              alt="유튜브"
+            />
           </div>
         </div>
       </div>
 
-      {/* 하단 바 */}
       <div className="footer-bottom">
         <div className="footer-cert">
           <p>
@@ -89,14 +96,20 @@ function Footer() {
             <br />
             [유효기간] 2025.01.15 ~ 2028.01.14
           </p>
-          <img src="/img/footer/5.svg" alt="isms 인증마크" />
+          <img
+            src={process.env.PUBLIC_URL + "/img/footer/5.svg"}
+            alt="isms 인증마크"
+          />
         </div>
         <div className="footer-bank">
           <p>
             고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한
             우리은행 채무지급보증 서비스를 이용하실 수 있습니다.
           </p>
-          <img src="/img/footer/6.svg" alt="우리은행 마크" />
+          <img
+            src={process.env.PUBLIC_URL + "/img/footer/6.svg"}
+            alt="우리은행 마크"
+          />
         </div>
       </div>
 
