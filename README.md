@@ -22,3 +22,4 @@
 ![컬리사이트 피피티-images-11](https://github.com/user-attachments/assets/6c1b219d-c81b-4cfd-abfd-5b2b230f5e7b)
 ![컬리사이트 피피티-images-12](https://github.com/user-attachments/assets/75083287-711d-48cf-83f2-e07ce5c82d86)
 ![컬리사이트 피피티-images-13](https://github.com/user-attachments/assets/0363fd4e-5545-4bb1-a2b2-48db16db3aa9)
+![컬리사이트 피피티-images-14](https://github.com/user-attachments/assets/17eabf07-5ae6-43d2-8894-12a0aa7026fa)
