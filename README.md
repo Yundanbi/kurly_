@@ -1,4 +1,4 @@
-컬리사이트 피피티.pdf
+![컬리사이트 피피티.pdf](https://github.com/Yundanbi/kurly_/blob/main/%EC%BB%AC%EB%A6%AC%EC%82%AC%EC%9D%B4%ED%8A%B8%20%ED%94%BC%ED%94%BC%ED%8B%B0.pdf)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
