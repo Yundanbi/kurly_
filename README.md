@@ -1,33 +1,55 @@
 # 사이트 설명
-![컬리사이트 피피티-images-0](https://github.com/user-attachments/assets/9691a55e-f820-4d44-a40a-cd5914043774)
+![컬리사이트 pdf-images-0 (2)](https://github.com/user-attachments/assets/b21d5098-605b-443f-82d2-e98b493236d6)
+
 
 ### 마켓컬리를 선택한 이유
-![컬리사이트 피피티-images-1](https://github.com/user-attachments/assets/18d5c173-7c01-48c4-ae6b-d1f9557da851)
+![컬리사이트 pdf-images-1](https://github.com/user-attachments/assets/a6dc8fd8-b199-40e5-8751-948d876bf5bc)
+
+
+
 
 ### 마켓컬리 개발 도구 설명
-![컬리사이트 피피티-images-2](https://github.com/user-attachments/assets/37d932ba-2db7-4d94-9f93-051f5cf5b143)
-![컬리사이트 피피티-images-3](https://github.com/user-attachments/assets/db86f5e8-079f-4316-abf3-ab7f64004c4b)
-![컬리사이트 피피티-images-4](https://github.com/user-attachments/assets/b989cdf9-d598-48e6-9a2d-0aa15d642f54)
+![컬리사이트 pdf-images-2](https://github.com/user-attachments/assets/7d58246f-3c74-4dd0-aeb1-c44948b7ff01)
+![컬리사이트 pdf-images-3](https://github.com/user-attachments/assets/b1c04afa-2b0d-40c1-b9f1-9d94c7e96ab8)
+![컬리사이트 pdf-images-4](https://github.com/user-attachments/assets/ec61ac00-999a-4d1b-9577-7c6382e95364)
 
 
 
 ### 마켓컬리 프로젝트 화면구현/제작과정
 
 ##### 부트스트랩 통해 메뉴바,슬라이드 구현
-![컬리사이트 피피티-images-5](https://github.com/user-attachments/assets/8b59e783-87f5-4b43-9a40-cc7c2b575c71)
+![컬리사이트 pdf-images-5](https://github.com/user-attachments/assets/b1749940-2553-4575-96a5-c8c55660c6d0)
+
+
 ##### 파라미터 사용해 고유한 id구현
-![컬리사이트 피피티-images-6](https://github.com/user-attachments/assets/5ca9054f-1bc0-4ffc-b661-9aad13b8d494)
+![컬리사이트 pdf-images-6](https://github.com/user-attachments/assets/5f2bffc0-a120-4279-b326-01f61bfaaebd)
+
+
 ##### 검색버튼 구현
-![컬리사이트 피피티-images-7](https://github.com/user-attachments/assets/d58adc6b-9a1a-45f6-8f87-614920cee546)
+![컬리사이트 pdf-images-7](https://github.com/user-attachments/assets/56bb1243-0e1b-4987-9bf7-a65f4b6243af)
+
+
 ##### 라우터 사용해 링크구현
-![컬리사이트 피피티-images-8](https://github.com/user-attachments/assets/48a14b4c-1337-4271-b40a-c9c5b895cf9b)
+![컬리사이트 pdf-images-8](https://github.com/user-attachments/assets/9f965198-8c4a-4806-8d49-f92144d1c902)
+
+
 ##### 리덕스 사용해 장바구니 구현
-![컬리사이트 피피티-images-9](https://github.com/user-attachments/assets/d3f7d2bd-8320-447c-a37e-36cf991d9e56)
+![컬리사이트 pdf-images-9](https://github.com/user-attachments/assets/f013df6e-908b-4e79-a777-1246117fd9d1)
+
+
 ##### 모달 사용해 장바구니 가기전 체크박스 구현
-![컬리사이트 피피티-images-10](https://github.com/user-attachments/assets/59d807f2-3053-4f85-8d6a-d68115c5ed3c)
+![컬리사이트 pdf-images-10](https://github.com/user-attachments/assets/f6365447-3a05-4a5f-8ccd-a52b0b105345)
+
+
+
 ##### 로그인 페이지 구현
-![컬리사이트 피피티-images-11](https://github.com/user-attachments/assets/6c1b219d-c81b-4cfd-abfd-5b2b230f5e7b)
+![컬리사이트 pdf-images-11](https://github.com/user-attachments/assets/45ba03ed-e1dd-4224-967f-9770870cafcb)
+
+
+
 ##### 게시판 페이지 구현
-![컬리사이트 피피티-images-12](https://github.com/user-attachments/assets/75083287-711d-48cf-83f2-e07ce5c82d86)
-![컬리사이트 피피티-images-13](https://github.com/user-attachments/assets/0363fd4e-5545-4bb1-a2b2-48db16db3aa9)
-![컬리사이트 피피티-images-14](https://github.com/user-attachments/assets/17eabf07-5ae6-43d2-8894-12a0aa7026fa)
+![컬리사이트 pdf-images-12](https://github.com/user-attachments/assets/c9453c92-8179-4b46-b015-c346ce9b6783)
+![컬리사이트 pdf-images-13](https://github.com/user-attachments/assets/3b798f9c-5c0d-4c36-a70c-78ba020bb3be)
+![컬리사이트 pdf-images-14](https://github.com/user-attachments/assets/c6ce7461-5e54-4980-8df1-ea356bf72de9)
+![컬리사이트 pdf-images-15](https://github.com/user-attachments/assets/e8740396-3e7c-455a-9445-568ef5593bea)
+![컬리사이트 pdf-images-16](https://github.com/user-attachments/assets/bcf14d09-8543-4e1a-be34-fdd2658aa62e)
